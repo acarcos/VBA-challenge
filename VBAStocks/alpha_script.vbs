@@ -32,6 +32,7 @@ For Each ws In ActiveWorkbook.Sheets
             'Read data
             fecha = ws.Cells(i, 2).Value
             'deit = Split(fecha, "2016")
+            'Instead of using split function, module is used to analyze data from different years
             deit_v2 = fecha Mod 10000
 
             'Values are saved depending of initial and final date
