@@ -90,13 +90,13 @@ For Each ws In ActiveWorkbook.Sheets
 
     ' FOR MAX/MIIN VALUE
 
-    'Maximum value of percentage
+    'Maximum percentage
     ws.Cells(2, 16).Value = Application.Max(Range(ws.Cells(2, 11), ws.Cells(lastrowdata, 11)))
     ws.Cells(2, 16).NumberFormat = "0.00%"
     'Respective ticker
     ws.Cells(2, 15).Value = Application.Index(Range(ws.Cells(2, 9), ws.Cells(lastrowdata, 9)), Application.Match(ws.Cells(2, 16).Value, Range(ws.Cells(2, 11), ws.Cells(lastrowdata, 11)), 0))
 
-    'Minimum value of percentage
+    'Minimum percentage
     ws.Cells(3, 16).Value = Application.Min(Range(ws.Cells(2, 11), ws.Cells(lastrowdata, 11)))
     ws.Cells(3, 16).NumberFormat = "0.00%"
     'Respective ticker
