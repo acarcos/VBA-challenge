@@ -1,5 +1,5 @@
 # VBA-challenge
 
-VBA script to analyze stock market data.
+Visual Basic for Applications script to analyze stock market data.
 
 :)
